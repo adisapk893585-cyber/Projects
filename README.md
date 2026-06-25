@@ -34,43 +34,82 @@ A feature-rich C++ console application for tracking, organizing, and analyzing L
 - Persistent Storage using File Handling
 - Automatic Data Loading at Startup
 - Automatic Data Saving on Exit
+- Modular Project Structure
+- Fast Prefix Search using Trie
 
 
 ## Technologies Used
 
+- C++
+- STL
 - Vector
 - Map
 - Unordered Map
 - Trie
+- File Handling
 - StringStream
 - Lambda Functions
 
 
 ## File Structure
 
-```
-main.cpp
-problems.txt
-goal.txt
-problems.csv
-README.md
+```text
+LeetCode-Progress-Tracker
+│
+├── data
+│   ├── problems.txt
+│   ├── goal.txt
+│   └── problems.csv
+│
+├── include
+│   ├── Problem.h
+│   ├── Tracker.h
+│   ├── Trie.h
+│   ├── Utils.h
+│   └── FileManager.h
+│
+├── src
+│   ├── main.cpp
+│   ├── Tracker.cpp
+│   ├── Trie.cpp
+│   ├── Utils.cpp
+│   └── FileManager.cpp
+│
+├── README.md
+└── .gitignore
 ```
 
 ---
 
 ## How to Run
 
-**Compile:** g`++` main.cpp -o `tracker`
+### Compile
 
-**Run:** `./tracker`
+```bash
+g++ src/*.cpp -I include -o LeetCodeTracker
+```
+
+### Run
+
+#### Windows
+
+```bash
+LeetCodeTracker.exe
+```
+
+#### Linux / macOS
+
+```bash
+./LeetCodeTracker
+```
 
 ## Data Storage
 
-All problem data is stored in: **`problems.txt`**
+All application data is stored inside the `data/` folder.
 
-Goal is stored in: **`goal.txt`**
-
-CSV Export: **`problems.csv`**
+- `problems.txt` → Stores all problems
+- `goal.txt` → Stores user's goal
+- `problems.csv` → Exported CSV file
 
 ## Data Format
 
@@ -87,6 +126,7 @@ Coin Change|Medium|DP|0|Not Solved|0
 
 ## Key Highlights
 
+- Modular C++ Project Structure
 - Trie-based Prefix Search
 - Goal Tracking System
 - Coding Streak Calculation
@@ -106,10 +146,30 @@ Coin Change|Medium|DP|0|Not Solved|0
 - Online LeetCode API Integration
 - Difficulty-based Daily Challenge
 - Progress Charts and Graphs
+- Database Support (SQLite/MySQL)
+- Dark Mode GUI
+- Cloud Backup
+- Multiple User Profiles
 
 
 ---
 
 ## Author
 
-Aditya Kumar
+**Aditya Kumar**
+
+- IIT Kharagpur
+
+## Screenshots
+
+### Main Menu
+
+(Add Screenshot)
+
+### Analytics Dashboard
+
+(Add Screenshot)
+
+### Prefix Search
+
+(Add Screenshot)
