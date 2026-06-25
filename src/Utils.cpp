@@ -1,4 +1,5 @@
-#include "Utils.h"
+#include "../include/Utils.h"
+#include <cctype>
 
 string toLowerCase(string s){
 

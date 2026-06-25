@@ -4,9 +4,9 @@
 #include <algorithm>
 #include <map>
 #include <string>
-#include "Tracker.h"
-#include "FileManager.h"
-#include "Utils.h"
+#include "../include/Tracker.h"
+#include "../include/FileManager.h"
+#include "../include/Utils.h"
 
 using namespace std;
 Tracker::Tracker(){
@@ -530,7 +530,7 @@ void Tracker::run(){
         }
     }
     else if(choice==19){
-        ofstream csv("problems.csv");
+        ofstream csv("../data/problems.csv");
         csv<<"Name,Difficulty,Topic,Solved,SolvedDate,Favorite\n";
         for(int i=0;i<problems.size();i++){
             csv<<problems[i].name<<","
@@ -896,7 +896,7 @@ void Tracker::run(){
 
         if(solvedCount>=goal){
 
-            cout<<"Goal Achieved! 🎉\n";
+            cout<<"Goal Achieved! \n";
         }
 }
     else if(choice==28){

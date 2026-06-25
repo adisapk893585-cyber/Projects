@@ -1,4 +1,5 @@
-#include "Trie.h"
+#include "../include/Trie.h"
+#include "../include/Utils.h"
 
 Trie::Trie(){
     root=new TrieNode();

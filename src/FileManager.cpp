@@ -1,18 +1,24 @@
-#include "FileManager.h"
-#include "Utils.h"
+#include<iostream>
+#include "../include/FileManager.h"
+#include "../include/Utils.h"
 
 #include <fstream>
 #include <sstream>
+
+using namespace std;
 
 void FileManager::loadProblems(
     vector<Problem>& problems,
     unordered_map<string,vector<int>>& topicIndex,
     Trie& trie){
 
-    ifstream fin("problems.txt");
+    ifstream fin("data/problems.txt");
 
-    if(!fin.is_open())
-        return;
+    
+if(!fin.is_open()){
+    cout << "ERROR: Cannot open data/problems.txt\n";
+    return;
+}
 
     string line;
 
@@ -50,7 +56,7 @@ void FileManager::loadProblems(
 void FileManager::saveProblems(
     vector<Problem>& problems){
 
-    ofstream fout("problems.txt");
+    ofstream fout("data/problems.txt");
 
     for(auto &p:problems){
 
@@ -69,7 +75,7 @@ int FileManager::loadGoal(){
 
     int goal=0;
 
-    ifstream fin("goal.txt");
+    ifstream fin("data/goal.txt");
 
     if(fin.is_open()){
 
@@ -82,7 +88,7 @@ int FileManager::loadGoal(){
 
 void FileManager::saveGoal(int goal){
 
-    ofstream fout("goal.txt");
+    ofstream fout("data/goal.txt");
 
     fout<<goal;
 

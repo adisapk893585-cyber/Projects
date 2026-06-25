@@ -1,9 +1,5 @@
 #include <bits/stdc++.h>
-#include "Problem.h"
-#include "Trie.h"
-#include "Utils.h"
-#include "FileManager.h"
-#include "Tracker.h"
+#include "../include/Tracker.h"
 
 using namespace std;
 
