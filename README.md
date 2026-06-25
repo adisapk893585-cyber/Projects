@@ -54,8 +54,7 @@ A feature-rich C++ console application for tracking, organizing, and analyzing L
 ## File Structure
 
 ```text
-LeetCode-Progress-Tracker
-│
+.
 ├── data
 │   ├── problems.txt
 │   ├── goal.txt
@@ -75,9 +74,15 @@ LeetCode-Progress-Tracker
 │   ├── Utils.cpp
 │   └── FileManager.cpp
 │
+├── assets
+│   ├── main-menu.png
+│   ├── analytics-dashboard.png
+│   └── prefix-search.png
+│
 ├── README.md
 └── .gitignore
 ```
+
 
 ---
 
@@ -90,14 +95,6 @@ g++ src/*.cpp -I include -o LeetCodeTracker
 ```
 
 ### Run
-
-#### Windows
-
-```bash
-LeetCodeTracker.exe
-```
-
-#### Linux / macOS
 
 ```bash
 ./LeetCodeTracker
