@@ -164,12 +164,12 @@ Coin Change|Medium|DP|0|Not Solved|0
 
 ### Main Menu
 
-(Add Screenshot)
+![Main Menu](assets/main-menu.png)
 
 ### Analytics Dashboard
 
-(Add Screenshot)
+![Analytics Dashboard](assets/analytical-dashboard.png)
 
 ### Prefix Search
 
-(Add Screenshot)
+![Prefix Search](assets/prefixSearch.png)

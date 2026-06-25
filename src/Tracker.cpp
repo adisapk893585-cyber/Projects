@@ -75,6 +75,15 @@ void Tracker::run(){
             cout<<"Difficulty: ";
             getline(cin,p.difficulty);
 
+            p.difficulty = toLowerCase(p.difficulty);
+
+            if(p.difficulty == "easy")
+                p.difficulty = "Easy";
+            else if(p.difficulty == "medium")
+                p.difficulty = "Medium";
+            else if(p.difficulty == "hard")
+                p.difficulty = "Hard";
+
             cout<<"Topic ";
             getline(cin,p.topic);
 
@@ -272,6 +281,7 @@ void Tracker::run(){
             }
 
             map<string,int> difficultyCount;
+            
 
             for(int i=0;i<problems.size();i++){
                 difficultyCount[problems[i].difficulty]++;
@@ -776,19 +786,32 @@ void Tracker::run(){
 
         if(problems.size()>0){
 
-            successRate=
-                (solvedCount*100.0)/problems.size();
+            successRate= (solvedCount*100.0)/problems.size();
+        }
+
+        map<string,int> difficultyCount;
+
+        for(int i=0;i<problems.size();i++){
+            difficultyCount[problems[i].difficulty]++;
         }
 
         cout<<"\n====== Analytics Dashboard ======\n";
 
-        cout<<"Total Problems : "
+        cout<<"\nTotal Problems : "
             <<problems.size()<<"\n";
 
         cout<<"Solved Problems : "
             <<solvedCount<<"\n";
+        cout<<"UnSolved Problems : "
+            <<problems.size()-solvedCount<<"\n";
 
-        cout<<"Favorite Problems : "
+        cout<<"\n";    
+
+        for(auto &it:difficultyCount){
+            cout<<it.first<<" : "<<it.second<<"\n";
+        }
+
+        cout<<"\nFavorite Problems : "
             <<favoriteCount<<"\n";
 
         cout<<"Most Solved Topic : "
@@ -796,7 +819,7 @@ void Tracker::run(){
 
         cout<<fixed<<setprecision(2);
 
-        cout<<"Success Rate : "
+        cout<<"\nSuccess Rate : "
             <<successRate
             <<"%\n";
     }
@@ -1006,8 +1029,6 @@ void Tracker::run(){
 
         bool found=false;
 
-        cout<<"\n==== Matching Problems ====\n";
-
         vector<string> suggestions=
         trie.getSuggestions(prefix);
 
@@ -1017,7 +1038,7 @@ void Tracker::run(){
             continue;
         }
 
-        cout<<"\n==== Suggestions ====\n";
+        cout<<"\n==== Suggestions ====\n\n";
 
         for(auto &s:suggestions){
             cout<<s<<"\n";

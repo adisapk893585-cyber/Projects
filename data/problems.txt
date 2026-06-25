@@ -7,7 +7,7 @@ Car Fleet|Medium|Stack|1|26-05-2026|0
 Clone Graph|Medium|Graph|1|01-06-2026|1
 Combination Sum|Medium|Backtracking|0||0
 Contains Duplicate|Easy|Hashing|1|08-06-2026|0
-Course Schedule I|medium|graph|1|19-06-2026|0
+Course Schedule I|Medium|graph|1|19-06-2026|0
 Daily Temperatures|Medium|Stack|1|28-05-2026|0
 Design Add and Search Words Data Structure|Medium|Trie|0||0
 Diameter of Binary Tree|Easy|Tree|1|05-06-2026|0
