@@ -1,54 +1,59 @@
 # LeetCode Progress Tracker
 
+![C++](https://img.shields.io/badge/C++-17-blue)
+![STL](https://img.shields.io/badge/STL-Used-success)
+![Trie](https://img.shields.io/badge/Data%20Structure-Trie-orange)
+![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20Linux-lightgrey)
+
 ## Overview
 
 A feature-rich C++ console application for tracking, organizing, and analyzing LeetCode problem-solving progress. It helps users manage coding practice efficiently with statistics, analytics, streak tracking, goals, favorites, and persistent file storage.
 
 ## Features
-- Add, Edit, Delete, and View Problems
-- Search Problems (Case-Insensitive)
-- Prefix Search using Trie
-- Search Problems by Topic
-- Advanced Search (Topic + Status)
-- Mark Problems as Solved
-- Store Solved Date
-- Mark Favorite Problems
-- Show Favorite Problems
-- Show Solved Problems
-- Show Unsolved Problems
-- Sort Problems by Name
-- Sort Problems by Difficulty
-- Topic-wise Statistics
-- Difficulty-wise Statistics
-- Difficulty-wise Solved Statistics
-- Progress Percentage Tracking
-- Goal Setting & Goal Tracker
-- Recent Activity Tracking
-- Current Streak Counter
-- Topic Weakness Detector
-- Problem Recommendation System
+
+### Problem Management
+- Add Problem
+- Edit Problem
+- Delete Problem
+- Mark as Solved
+- Mark Favorite
+
+### Search
+- Search by Name
+- Prefix Search (Trie)
+- Search by Topic
+- Advanced Search
+
+### Analytics
 - Analytics Dashboard
 - Difficulty Heatmap
-- Achievement System
-- Export Data to CSV
-- Persistent Storage using File Handling
-- Automatic Data Loading at Startup
-- Automatic Data Saving on Exit
-- Modular Project Structure
-- Fast Prefix Search using Trie
+- Topic Statistics
+- Recommendation System
+- Weak Topic Detection
 
+### Progress Tracking
+- Goal Tracker
+- Current Streak
+- Recent Activity
+- Achievement System
+
+### Data Management
+- Export CSV
+- Persistent Storage
+- Auto Save
+- Auto Load
 
 ## Technologies Used
 
-- C++
-- STL
+- C++17
+- Standard Template Library (STL)
 - Vector
 - Map
 - Unordered Map
 - Trie
 - File Handling
+- Lambda Expressions
 - StringStream
-- Lambda Functions
 
 
 ## File Structure
@@ -167,6 +172,26 @@ Coin Change|Medium|DP|0|Not Solved|0
 
 ![Analytics Dashboard](assets/analytical-dashboard.png)
 
+### Recommended Problems
+
+![Recommended Problems](assets/RecommendedProblems.png)
+
+### Difficulty HeatMap
+
+![Difficulty HeatMap](assets/DifficultyHeatMap.png)
+
+### Goal Tracker
+
+![Goal Tracker](assets/GoalTracker.png)
+
 ### Prefix Search
 
 ![Prefix Search](assets/prefixSearch.png)
+
+### Achievements
+
+![Achievements](assets/Achievements.png)
+
+### Recent Activity
+
+![Recent Activity](assets/RecentActivity.png)
