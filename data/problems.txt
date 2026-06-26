@@ -35,13 +35,12 @@ Permutations|Medium|Backtracking|1|11-06-2026|1
 Product of Array Except Self|Medium|Array|0||0
 Redundant Connection|Medium|Graph|0||0
 Rotate Image|Medium|Matrix|1|16-06-2026|0
-Serialize and Deserialize Binary Tree|Hard|Tree|0||0
 Subsets|Medium|Backtracking|1|10-06-2026|0
 Top K Frequent Elements|Medium|Heap|0||0
 Trapping Rain Water|Hard|Two Pointer|0||0
 Two Sum|Easy|Array|1|26-06-2026|0
 Unique Paths|Medium|DP|1|12-06-2026|0
-Valid Parentheses|Easy|Stack|1|21-06-2026|0
+Valid Parentheses|Easy|Stack|1|26-06-2026|0
 Validate Binary Search Tree|Medium|Tree|1|04-06-2026|1
 Word Break|Medium|DP|1|30-05-2026|1
 Word Ladder|Hard|Graph|0||0
