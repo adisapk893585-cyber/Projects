@@ -80,9 +80,15 @@ A feature-rich C++ console application for tracking, organizing, and analyzing L
 │   └── FileManager.cpp
 │
 ├── assets
+│   ├── Achievements.png
+│   ├── CurrentStreak.png
+│   ├── DifficultyHeatMap.png
+│   ├── GoalTracker.png
+│   ├── RecentActivity.png
+│   ├── RecommendedProblems.png
+│   ├── analytical-dashboard.png
 │   ├── main-menu.png
-│   ├── analytics-dashboard.png
-│   └── prefix-search.png
+│   └── prefixSearch.png
 │
 ├── README.md
 └── .gitignore
