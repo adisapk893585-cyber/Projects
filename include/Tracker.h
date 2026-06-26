@@ -14,6 +14,7 @@ private:
 
     vector<Problem> problems;
     unordered_map<string,vector<int>> topicIndex;
+    unordered_map<string,int> nameIndex;
     Trie trie;
     int goal;
 
